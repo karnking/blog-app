@@ -1,0 +1,99 @@
+/* reusable */
+
+.capsule {
+  height: 26px;
+  line-height: 26px;
+  border-radius: 10px;
+}
+
+#navbar {
+  border: 1px solid green;
+}
+
+#main_container {
+  display: flex;
+}
+
+.container {
+  margin-bottom: 80px;
+}
+
+
+
+
+/* cards */
+
+/* card list */
+.card-list {
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: 100%;
+  gap: 4%;
+}
+
+.card:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+@media (min-width: 576px) {
+  .card {
+    flex-basis: 38%;
+  }
+}
+
+@media (min-width: 768px) {
+  .card {
+    flex-basis: 100%;
+  }
+}
+
+/* individual card  */
+.card {
+  background-color: white;
+  font-size: 20px;
+  padding: 15px;
+
+  border: 1px solid #e1e1e1;
+  border-radius: 4px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 4%;
+}
+
+
+
+.card > div > img {
+  height: 300px;
+  max-width: 250px;
+  object-fit: cover !important;
+}
+
+@media (min-width: 768px) {
+  .card {
+    flex-direction: row;
+  }
+}
+
+.card > div > div > button {
+  background-color: red !important;
+  color: white;
+}
+
+.deleteBtn {
+  margin-left: 25%;
+  background-color: red;
+  color: white;
+}
+
+.card_body > p {
+  margin-bottom: 5px;
+  
+}
+
+/* add your CSS here */
+.card_body>.profile{
+  border-radius: 50%;
+   height:100px;
+  width:100px; 
+}
